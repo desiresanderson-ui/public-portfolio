@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 11 - JQuery Colors</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display:flex;
+        gap: 15px;
+    }
+
+    button {
+        padding: 15px 25px;
+        font-size: 16px;
+        cursor: pointer;    
+        border: none;
+        border-radius: 5px;
+    }
+
+    #redBtn {background-color: red; color: white;}
+    #greenBtn {background-color: green; color: white;}
+    #blueBtn {background-color: blue; color: white;}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="redBtn">Red</button>
+        <button id="greenBtn">Green</button>
+        <button id="blueBtn">Blue</button>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        $('#redBtn').on('click', function() {
+            $('body').css('background-color', 'red');
+        });
+        $('#greenBtn').on('click', function() {
+            $('body').css('background-color', 'green');
+        });
+        $('#blueBtn').on('click', function() {
+            $('body').css('background-color', 'blue');
+        });
+    });
+    </script>
+</body>
+</html>
