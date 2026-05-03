@@ -184,4 +184,16 @@ footer {
     nav button {
         width: 90%;
     }
-}
+
+    .contact-links {
+    margin-top: 15px;
+    }
+
+    .contact-links p {
+    margin-bottom: 10px;
+    }
+
+    .contact-links a {
+    margin: 0 5px;
+    }
+ }
