@@ -7,7 +7,7 @@ function showSection(sectionId) {
         section.classList.remove("active");
     });
 
-    buttons.forEach(button => {
+        buttons.forEach(button => {
         button.classList.remove("active");
     });
 
