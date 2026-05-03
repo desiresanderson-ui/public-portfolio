@@ -185,15 +185,22 @@ footer {
         width: 90%;
     }
 
-    .contact-links {
-    margin-top: 15px;
-    }
-
-    .contact-links p {
-    margin-bottom: 10px;
+    .contact-links i {
+    margin-right: 8px;
+    color: #4b0082;
     }
 
     .contact-links a {
-    margin: 0 5px;
+    margin-right: 10px;
+    }
+
+    .contact-links a:hover {
+    color: #2bb3b1;
+    }
+
+    .contact-links p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     }
  }
