@@ -16,6 +16,7 @@ const skillsBtn = document.getElementById("skillsBtn");
 const educationBtn = document.getElementById("educationBtn");
 const experienceBtn = document.getElementById("experienceBtn");
 const projectsBtn = document.getElementById("projectsBtn");
+const contactBtn = document.getElementById("contactBtn");
 
 if (aboutBtn) {
     aboutBtn.addEventListener("click", () => showSection("about"));
@@ -35,6 +36,10 @@ if (experienceBtn) {
 
 if (projectsBtn) {
     projectsBtn.addEventListener("click", () => showSection("projects"));
+}
+
+if (contactBtn) {
+    contactBtn.addEventListener("click", () => showSection("contact"));
 }
 
 if (document.getElementById("about")) {
