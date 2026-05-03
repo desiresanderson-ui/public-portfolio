@@ -1,13 +1,29 @@
 const sections = document.querySelectorAll(".content-section");
+const buttons = document.querySelectorAll("nav button");
 
 function showSection(sectionId) {
     sections.forEach(section => {
         section.style.display = "none";
+        section.classList.remove("active");
+    });
+
+    buttons.forEach(button => {
+        button.classList.remove("active");
     });
 
     const target = document.getElementById(sectionId);
+    const activeButton = document.getElementById(sectionId + "Btn");
+
     if (target) {
         target.style.display = "block";
+
+        setTimeout(() => {
+            target.classList.add("active");
+        }, 50);
+    }
+
+    if (activeButton) {
+        activeButton.classList.add("active");
     }
 }
 
