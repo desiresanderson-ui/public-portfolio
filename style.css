@@ -45,13 +45,14 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 button:hover,
 button.active {
     background-color: #4b0082;
     color: white;
+    transform: translateY(-2px);
 }
 
 main {
@@ -67,8 +68,15 @@ main {
     border-radius: 14px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     margin-bottom: 25px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
 }
-
+    .content-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+    
 h2, h3 {
     color: #4b0082;
     margin-bottom: 12px;
@@ -107,12 +115,12 @@ a:hover {
     padding: 20px;
     border-radius: 14px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.07);
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .project-card h3 {
